@@ -1,0 +1,90 @@
+\documentclass[colorlinks,linkcolor=true]{article}
+\usepackage{hyperref,verbatim}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{tgpagella} % text only
+\usepackage{mathpazo} 
+\usepackage[margin=0.6in]{geometry}
+\addtolength{\topmargin}{0in}
+
+
+\newcommand{\deadline}{Midnight March 15}
+\newcommand{\extdeadline}{Midnight March 17}
+\newcommand{\total}{10}
+
+%opening
+\title{Machine Learning\\Homework 5 : KNN\\(due \deadline)}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\noindent\fbox{
+		\parbox{\textwidth}{
+			Instructions\\
+			\begin{enumerate}
+				\item In case you are unfamiliar with the Python data ecosystem (NumPy, Pandas), you are recommended to study the first four chapters of the \href{https://jakevdp.github.io/PythonDataScienceHandbook/}{Python data science handbook}. A doubt clearing session would be organised in case you have any difficulties in the data science ecosystem.
+				\item The deadline for full score is \deadline. You can get 50\% credit for late submission (\extdeadline).
+				\item Total marks = \total
+				\item You have to type the assignment using a word processing engine, create a pdf and upload on the form. Please note that only pdf files will be accepted.
+				\item All code/Jupyter notebooks must be put up as \href{https://gist.github.com/}{\textbf{secret gists}} and linked in the created pdf submission. Again, only secret gists. Not public ones.
+				\item Any instances of cheating/plagiarism will not be tolerated at all. 
+				\item Cite all the pertinent references in IEEE format.
+				\item The least count of grading would be 0.5 marks. 
+				
+			\end{enumerate}
+		}
+	}
+
+
+\begin{enumerate}
+
+
+\item \begin{enumerate}
+	
+\item 	Implement KNN classification and regression using Numpy and Pandas. Keep the distance metric as a function argument which can take: 'Euclidean', 'Manhattan' or 'Cosine' \textbf{[2 marks]}.
+\begin{verbatim}
+def KNN_predict(type=`classification', train_X, train_Y, test_X, K, distance_metric=`Euclidean'):
+
+\end{verbatim} 
+
+
+	\item Vary the dimension (number of features of X) and the number of train instances and empirically show the runtime of your algorithm as function of dimension and number of train instances. Feel free to use randomly generated data. How does this compare with the theoretical time complexity of KNN?  \textbf{[2 marks]}.
+\end{enumerate}
+
+\item Show the usage of scikit learn's KNN module for the real estate price prediction \href{https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set}{regression problem}.  
+
+\begin{enumerate}
+	\item Using 5-fold cross-validation report the optimal $K$ value for each fold, alongside, Train, Validation and Test RMSE error. How does the test error compare with the test errors for the different folds you obtained in eariler assignments. \textbf{[1 mark]}
+	\item Are all the features on the same scale in the above solution? Does that impact KNN? How?
+	Now, scale the features between 0 and 1. You may also want to ensure that when you're predicting, you scale the input features of the test set using the same function used to transform the train input features. Using 5-fold cross-validation report the optimal $K$ value for each fold, alongside, Train, Validation and Test RMSE error. \textbf{[2 marks]}
+	\item Let us pick up a single fold (train on first 80\% data and last 20\% as test data) and plot train, test error as a function of $K$. Comment on the shape of the train error curve. \textbf{[1 mark]}
+	\begin{enumerate}
+		\item On this test set, find the home which gives the maximum RMSE error. What can you say about KNN performance on this home. Why is it poor? Is there something you could do to improve the prediction for this home? \textbf{[1 mark]}
+	\end{enumerate}
+\end{enumerate}
+
+\item Draw a Voronoi diagram for the IRIS dataset for 1-NN, where we are only using `sepal-length` and `sepal-width` as the two fearures. You could use 3 different colours for the 3 different classes. What can you infer from this diagram?  \textbf{[1 mark]}
+
+
+
+
+\textbf{Questions below will not contribute to your score. They are presented here for the interested reader}
+
+\item Implement KD-Tree algorithm for KNN.
+\item Question 4.7.4 from ISLR
+\item Implement cosine based KNN for the movie recommendation problem. Use MovieLens 100k dataset for the same. 
+\item We saw in the lectures that Euclidean norm is not well siuted for high dimensional problems. Repeat the experiments for $L_p$ norm where $p<=1$. What can you conclude from this analysis. 
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,0 +1,155 @@
+\documentclass[colorlinks,linkcolor=true]{article}
+\usepackage{hyperref,verbatim}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{tgpagella} % text only
+\usepackage{mathpazo} 
+\usepackage[margin=0.6in]{geometry}
+\addtolength{\topmargin}{0in}
+
+
+\newcommand{\deadline}{Midnight Feb 18}
+\newcommand{\extdeadline}{Midnight Feb 20}
+\newcommand{\total}{20}
+
+%opening
+\title{Machine Learning\\Homework 4 : Regression - II\\(due \deadline)}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\noindent\fbox{
+		\parbox{\textwidth}{
+			Instructions\\
+			\begin{enumerate}
+				\item In case you are unfamiliar with the Python data ecosystem (NumPy, Pandas), you are recommended to study the first four chapters of the \href{https://jakevdp.github.io/PythonDataScienceHandbook/}{Python data science handbook}. A doubt clearing session would be organised in case you have any difficulties in the data science ecosystem.
+				\item The deadline for full score is \deadline. You can get 50\% credit for late submission (\extdeadline).
+				\item Total marks = \total
+				\item You have to type the assignment using a word processing engine, create a pdf and upload on the form. Please note that only pdf files will be accepted.
+				\item All code/Jupyter notebooks must be put up as \href{https://gist.github.com/}{\textbf{secret gists}} and linked in the created pdf submission. Again, only secret gists. Not public ones.
+				\item Any instances of cheating/plagiarism will not be tolerated at all. 
+				\item Cite all the pertinent references in IEEE format.
+				\item The least count of grading would be 0.5 marks. 
+				
+			\end{enumerate}
+		}
+	}
+
+
+\begin{enumerate}
+	
+	\item Learn $y = \theta_0 + \theta_1\times x$ on the following small dataset on pen and paper. You may scan or click picture of your answers and attach to the pdf.
+	$$X = \begin{bmatrix}
+	
+	
+	1       \\
+	3      \\
+	6      \\
+
+	
+	\end{bmatrix}$$
+	and 
+	
+	$$Y = \begin{bmatrix}
+	
+	
+	6 \\
+	10  \\
+	16  \\
+	
+	\end{bmatrix}$$
+	using:
+	\begin{enumerate}
+		
+		\item Coordinate descent where initial values of $(\theta_0, \theta_1)$ is (0, 0). Show the calculations for first 3 iterations. \textbf{[1 mark]}
+		\item Stochastic Gradient desent where initial values of $\theta_0, \theta_1)$ is (0, 0) and step size (or learning rate) is $\alpha=0.01$. Show the calculations for initial 1 epochs (or 1*3 iterations). \textbf{[1 mark]} 
+		\item Normal equation for ridge regression with penalizing coeffient $\lambda$ = 1 \textbf{[1 mark]}
+		
+	\end{enumerate}
+
+\item In this question, you will be writing your custom linear regression implementations. 
+\begin{enumerate}
+	\item Write a function \texttt{normalEquationRidgeRegression(X, y, $\lambda$)} where $X$ is our feature matrix containing $N$ samples (rows) and $d$ features (columns) and $y$ is our output vector containing $N$ samples.  $\lambda$ is the penalty coefficient. This function returns a vector $\theta$ containing $d+1$ rows. You are free to use numpy's matrix inverse, determinant and multiplication routines. \textbf{[1 mark]}
+	\item Write a function \texttt{coodrdinateDescentRegression(X, y)} where $X$ is our feature matrix containing $N$ samples (rows) and $d$ features (columns) and $y$ is our output vector containing $N$ samples.  This function returns a vector $\theta$ containing $d+1$ rows. Please note this is the unregularised linear regression. \textbf{[2 marks]}
+	\item Write a function \texttt{coodrdinateDescentLasso(X, y, $\lambda$)} where $X$ is our feature matrix containing $N$ samples (rows) and $d$ features (columns) and $y$ is our output vector containing $N$ samples.  $\lambda$ is the penalty coefficient for the $\ell_1$ regularisation. This function returns a vector $\theta$ containing $d+1$ rows.  \textbf{[2 marks]}
+	\item Write a function \texttt{sgdRegression(X, y, alpha = 0.1)} to learn the regression coefficients using stochastic gradient descent. You have to write the formulae for gradient wrt the different $\theta_j \forall j \in (1, ..d)$ \textbf{[1 mark]}
+	\item Write a function \texttt{gradientDescentAutogradLasso(X, y, alpha = 0.1, $\lambda$)} to learn the regression coefficients for LASSO using gradient descent. Instead of writing the formulae for computing gradients by yourself, you will use \href{https://github.com/HIPS/autograd}{Autograd} to automatically do that for you.  Gradients for $|\theta|$ are not defined, do you still get the correct solution? \textbf{[1 mark]}.
+\end{enumerate}
+
+
+\item The following question is to aid our understanding of gradient descent variants. We will be reusing the data from Q1. 
+\begin{enumerate}
+	\item Create a Matplotlib animation where the plot contains two columns: the first one being the contour plot and the second one being the linear regression fit on the data. The different frames in the animation correspond to different iterations of stochastic gradient descent applied on the dataset to learn $\theta_0$ and $\theta_1$. For each iteration, draw the current value of $\theta_0$ and $\theta_1$ on the contour plot and also an arrow to the next $\theta_0$ and $\theta_1$ as learnt by gradient update rule. Correspondingly draw the $y = \theta_0 + \theta_1\times x$ line on the other subplot showing the scatter plot. The overall title of the plot show be the iteration number and the residual sum of squares. \textbf{[1 mark]}
+		\item Do the same as part a, but using coordinate descent \textbf{[1 mark]}
+\end{enumerate}
+
+
+
+	\item 	
+	\begin{enumerate}
+		\item For the following X and y, use scikit-learn to learn a $\ell_2$ regularised linear model. \textbf{[1 mark]}
+		\item In the previous assignment, when you tried solvign the problem using normal equations, you find that one of the matrix in the normal equation was non-invertible. If you use the normal equations for Ridge regression, with say $\lambda=1$, can you now learn the coefficients? If yes, calculate the coefficients.  \textbf{[1 mark]}
+
+	
+$$X = \begin{bmatrix}
+
+
+1       & 2 \\
+2      &  4  \\
+3      &  6  \\
+4      &  8  \\
+
+\end{bmatrix}$$
+and 
+
+$$Y = \begin{bmatrix}
+
+
+2 \\
+3  \\
+4  \\
+5  \\
+
+\end{bmatrix}$$
+
+	\end{enumerate}
+
+
+
+
+
+\item Show the usage of scikit learn's LASSO and Ridge module for the real estate price prediction \href{https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set}{regression problem}.  First, you may want to normalise the features between 0 and 1. You may also want to ensure that when you're predicting, you normalise the input features of the test set using the same function used to transform the train input features.
+
+\begin{enumerate}
+	\item Using 5-fold cross-validation report the optimal penalty coefficient for each fold, alongside, Train, Validation and Test RMSE error for Ridge regression. \textbf{[1 mark]}
+	\item Using 5-fold cross-validation report the optimal penalty coefficient for each fold, alongside, Train, Validation and Test RMSE error for LASSO. \textbf{[1 mark]}
+	\item  Draw the regularisation path for LASSO and Ridge regression for the different variables. What does this tell you about sparsity of the solution? \textbf{[2 marks]}
+	\item Let us pick up a single fold (train on first 80\% data and last 20\% as test data) and plot train, test error as a function of $\lambda$ for Rdige and LASSO.\textbf{[2 marks]}
+\end{enumerate}
+
+
+
+
+\textbf{Questions below will not contribute to your score. They are presented here for the interested reader}
+
+\item Create a Jupyter widget/Matplolitb animation to draw the contour plot for Ridge and LASSO as a function of $\lambda$. Show the changing contour as $\lambda$ is varied.
+\item Plot the different $\ell_p$ norms for p less than 1. What value of $p$ will give highest sparsity? Whay don't we use this norm for sparse solutions? Can you use Autograd with this norm and still obtain a good sparse solution?
+\item Use statsmodel to create a linear fit. What other numbers does the fit show you beyond what you have seen thus far. What is the meaning of those numbers?
+\item Study about the assumptions in linear regression. We studied one such condition through the previous assignment that the residuals should be normally distributed. What other conditions must hold?
+\item Read about Poisson Regression. What you have studied in the lectures lays the foundations for most advanced techniques. 
+\item What is the other connotation/meaning of regularisation beyond prevent overfitting? What are we trying to make more regular? 
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+\end{document}

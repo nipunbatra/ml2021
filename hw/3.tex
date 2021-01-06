@@ -1,0 +1,163 @@
+\documentclass[colorlinks,linkcolor=true]{article}
+\usepackage{hyperref,verbatim}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{tgpagella} % text only
+\usepackage{mathpazo} 
+\usepackage[margin=0.6in]{geometry}
+\addtolength{\topmargin}{0in}
+
+
+\newcommand{\deadline}{Midnight Feb 7}
+\newcommand{\extdeadline}{Midnight Feb 9}
+\newcommand{\total}{22}
+
+%opening
+\title{Machine Learning\\Homework 3 : Regression - I\\(due \deadline)}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\noindent\fbox{
+		\parbox{\textwidth}{
+			Instructions\\
+			\begin{enumerate}
+				\item In case you are unfamiliar with the Python data ecosystem (NumPy, Pandas), you are recommended to study the first four chapters of the \href{https://jakevdp.github.io/PythonDataScienceHandbook/}{Python data science handbook}. A doubt clearing session would be organised in case you have any difficulties in the data science ecosystem.
+				\item The deadline for full score is \deadline. You can get 50\% credit for late submission (\extdeadline).
+				\item Total marks = \total
+				\item You have to type the assignment using a word processing engine, create a pdf and upload on the form. Please note that only pdf files will be accepted.
+				\item All code/Jupyter notebooks must be put up as \href{https://gist.github.com/}{\textbf{secret gists}} and linked in the created pdf submission. Again, only secret gists. Not public ones.
+				\item Any instances of cheating/plagiarism will not be tolerated at all. 
+				\item Cite all the pertinent references in IEEE format.
+				\item The least count of grading would be 0.5 marks. 
+				
+			\end{enumerate}
+		}
+	}
+
+
+\begin{enumerate}
+	
+	\item Learn $y = \theta_0 + \theta_1\times x$ on the following small dataset on pen and paper. You may scan or click picture of your answers and attach to the pdf.
+	$$X = \begin{bmatrix}
+	
+	
+	1       \\
+	3      \\
+	6      \\
+
+	
+	\end{bmatrix}$$
+	and 
+	
+	$$Y = \begin{bmatrix}
+	
+	
+	6 \\
+	10  \\
+	16  \\
+	
+	\end{bmatrix}$$
+	using:
+	\begin{enumerate}
+		\item Normal equations or matrix method \textbf{[1 mark]}
+		\item Gradient desent where initial values of $\theta_0, \theta_1)$ is (0, 0) and step size (or learning rate) is $\alpha=0.1$. Show the calculations for initial 5 iterations. \textbf{[1 mark]} \\
+		\textbf{EDIT}: Does the cost/objective diverge? Are you using residual sum of squares (sum of squared errors)? Maybe you want to try using mean of squared errors as the objective? Or, use a small learning rate $\alpha$.
+		\item Using the formula in terms of covariance and variance \textbf{[1 mark]} 
+		\
+		
+	\end{enumerate}
+
+
+
+	\item 	
+	\begin{enumerate}
+		\item For the following X and y, use scikit-learn to learn a linear model. \textbf{[1 mark]}
+		\item Solve the problem using normal equations. You may find that one of the matrix in the normal equation is non-invertible. Why does the matrix turn out to be non-invertible? Why can scikit-learn implementation still correctly solve this regression problem?  \textbf{[1 mark]}
+	\end{enumerate}
+	
+$$X = \begin{bmatrix}
+
+
+1       & 2 \\
+2      &  4  \\
+3      &  6  \\
+4      &  8  \\
+
+\end{bmatrix}$$
+and 
+
+$$Y = \begin{bmatrix}
+
+
+2 \\
+3  \\
+4  \\
+5  \\
+
+\end{bmatrix}$$
+
+
+
+\item  \begin{enumerate}
+	
+
+\item Show the usage of scikit learn's linear regression module for the real estate price prediction \href{https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set}{regression problem}.  What is the RMS error on the test set?  \textbf{[1 mark]}
+
+\item Based on the regression co-efficients what can you comment about the importance of different features? Is it correct to assume that larger co-efficients means more important feature?  \textbf{[1 mark]}
+\item Now, standardize the dataset to have all features on a scale of 0 to 1. Re-learn the regression co-efficients and now comment on the importance of different features.  \textbf{[1 mark]}
+\item What is the distribution of the residuals?  \textbf{[1 mark]} \\
+\textbf{EDIT:} Hint - is it a normal distribution? or, lognormal, or ...?
+\item Use cross-validation to find the optimal set of features to use for regression. 
+\begin{enumerate}
+	\item Using all possible feature sets of length 1, 2, 3, or 4, what is the optimal feature set as per the validation set and how does this set of features perform on the test set wrt the model learnt on the entire feature set?  \textbf{[1 mark]}
+	\item Use Sequential Forward Selection (or Stepwise Forward Selection) which is a greedy procedure to find the optimal set of features. How does this how does it perform on the test set wrt the model learnt on the entire feature set?  \textbf{[1 mark]}
+\end{enumerate}
+\end{enumerate}
+
+\item In this question, you will be writing your custom linear regression implementation. 
+\begin{enumerate}
+	\item Write a function \texttt{normalEquationRegression(X, y)} where $X$ is our feature matrix containing $N$ samples (rows) and $d$ features (columns) and $y$ is our output vector containing $N$ samples. This function returns a vector $\theta$ containing $d+1$ rows. You are free to use numpy's matrix inverse, determinant and multiplication routines. \textbf{[1 mark]}
+	\item Write a function \texttt{gradientDescentRegression(X, y, alpha = 0.1)} to learn the regression coefficients using gradient descent. You have to write the formulae for gradient wrt the different $\theta_j \forall j \in (1, ..d)$ \textbf{[1 mark]}
+	\item Write a function \texttt{gradientDescentAutogradRegression(X, y, alpha = 0.1)} to learn the regression coefficients using gradient descent. Instead of writing the formulae for computing gradients by yourself, you will use \href{https://github.com/HIPS/autograd}{Autograd} to automatically do that for you. \textbf{[1 mark]} \\
+		\textbf{EDIT:}  In the above function you solved earlier: \texttt{gradientDescentRegression(X, y, alpha = 0.1)}, you manually computed the formulae for gradients and plugged that into gradient descent. In this version, you will use autograd to compute the gradient of the cost or objective function (which is sum of squared errors or mean of squared errors) wrt $\theta's$.
+
+	\item Write a function \texttt{gradientDescentPyTorchRegression(X, y, alpha = 0.1)} to learn the regression coefficients using gradient descent. Instead of numpy, you would now be using PyTorch. This question will set the ground for your project and future assignment. Similar to Autograd linked in the previous question, PyTorch also has an automatic gradient computation routine that you should make use of. Please note that do not use \texttt{nn.Linear()} for this question. \textbf{[1 mark]}
+	\item Illustrate the usage of all of your above four versions on the real estate price dataset in Q3. Report the time taken and accuracy for the four implementations compared with scikit-learn inbuilt function. Use all features from the dataset for all the methods. \textbf{[2 marks]}
+\end{enumerate}
+
+\item In this question, we will be implementing polynomial regression as a special case of linear regression. First, we will be generating some data. 
+
+\begin{verbatim}
+import numpy as np
+x = np.arange(0, 20.1, 0.1)
+np.random.seed(0)
+y = 1*x**5 + 3*x**4 - 100*x**3 + 8*x**2 -300*x - 1e5 + np.random.randn(len(x))*1e5
+\end{verbatim}
+
+Now, we want to learn a polynomial function of degree $p$ on this dataset, i.e. $y = \theta_0 + \theta_1 \times x^1 + \theta_2 \times x^2 + ... \theta_p \times x^p $. We can use our developed linear regression implementations for doing so, by transforming our dataset and creating the matrix X containing columns corresponding to $x^0$, $x^1$, $x^2$, ..., $x^p$.
+Using any of your implementations learn the regression coefficients for $p=5$ and $p=4$. How close are your coefficients for $p=5$ to the ones used to generate the data? \textbf{[2 marks]}
+
+\item The following question is to aid our understanding of gradient descent. We will be reusing the data from Q1. 
+\begin{enumerate}
+	\item Create a contour plot in the $\theta_0$ and $\theta_1$ space of the residual sum of squares \textbf{[1 mark]}
+	\item Create a Matplotlib animation where the plot contains two columns: the first one being the contour plot and the second one being the linear regression fit on the data. The different frames in the animation correspond to different iterations of gradient descent applied on the dataset to learn $\theta_0$ and $\theta_1$. For each iteration, draw the current value of $\theta_0$ and $\theta_1$ on the contour plot and also an arrow to the next $\theta_0$ and $\theta_1$ as learnt by gradient update rule. Correspondingly draw the $y = \theta_0 + \theta_1\times x$ line on the other subplot showing the scatter plot. The overall title of the plot show be the iteration number and the residual sum of squares. You are free to use any gradient desent implementation. \textbf{[2 marks]}
+\end{enumerate}
+	
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

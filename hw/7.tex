@@ -1,0 +1,78 @@
+\documentclass[colorlinks,linkcolor=true]{article}
+\usepackage{hyperref,verbatim}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{tgpagella} % text only
+\usepackage{mathpazo} 
+\usepackage[margin=0.6in]{geometry}
+\addtolength{\topmargin}{0in}
+
+
+\newcommand{\deadline}{Midnight April 9}
+\newcommand{\extdeadline}{Midnight April 10}
+\newcommand{\total}{14}
+
+%opening
+\title{Machine Learning\\Homework 7 : SVM\\(due \deadline)}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\noindent\fbox{
+		\parbox{\textwidth}{
+			Instructions\\
+			\begin{enumerate}
+
+				\item The deadline for full score is \deadline. You can get 50\% credit for late submission (\extdeadline).
+				\item Total marks = \total
+				\item You have to type the assignment using a word processing engine, create a pdf and upload on the form. Please note that only pdf files will be accepted.
+				\item All code/Jupyter notebooks must be put up as secret gists and linked in the created pdf submission. Again, only secret gists. Not public ones.
+				\item Any instances of cheating/plagiarism will not be tolerated at all. 
+				\item Cite all the pertinent references in IEEE format.
+				\item The least count of grading would be 0.5 marks. 
+				
+			\end{enumerate}
+		}
+	}
+
+
+
+\noindent \textbf{You may find the \href{https://www.cvxpy.org/examples/machine_learning/ridge_regression.html}{following tutorial} on using CVXPY for Ridge regression very useful as a fully worked out example for the problems in this assignment}
+\begin{enumerate}
+
+
+
+\item \begin{enumerate}
+	
+\item Implement a function for hard margin SVM in primal form using cvxpy. For keeping this task simple assume w is two dimensional, i.e. $\hat{y(x)} = SIGN(w_1x_1 + w_2x_2 + b)$ where x and w are both two dimensional vectors \textbf{[2 marks]}
+\begin{enumerate}
+	\item Show the usage of your implementation on the IRIS dataset. We will only be making use of sepal-length and petal-width as the two features. We have only two classes - Setosa and Not-Setosa. This problem is linearly separable. For showing your implementation, train the hard margin SVM using all the data. \textbf{[1 marks]}
+	\item cvxpy also \href{https://www.cvxpy.org/tutorial/advanced/index.html}{allows} you to see the dual values. Can you compute the dual values? What do they mean? \textbf{[1 marks]}
+	\item Plot the decision boundary (separating hyperplane) in dark black and the margins in dotted line. Encircle the support vector points. \textbf{[1 marks]}
+	\item Plot the decision boundary in dark black and the margins in dotted line. This time use sklearn's SVM with linear kernel. Encircle the support vector points. Do you get the same answer as when you use your own SVM?\textbf{[1 marks]}
+	\item If you throw away all the points except the support vectors does your decision boundary remain the same? Why? \textbf{[1 marks]}
+\end{enumerate}
+
+\item Implement a function for soft margin SVM in primal form using cvxpy, but formulated as hinge loss plus penalty. \textbf{[1 marks]}
+\begin{enumerate}
+	\item Could you use Autograd to learn the soft margin SVM when formulated as hinge loss plus penalty? If yes, write the function. If not, explain why? \textbf{[1 marks]}
+	\item  Show the usage of your implementation(s) on the IRIS dataset. For all our experiments, we will only be making use of sepal-length and sepal-width as the two features. We have only two classes - Virginica and Not-Virginica. This problem is not linearly separable.  \textbf{[1 marks]}
+	\item Plot the decision boundary in dark black and the margins in dotted line. Encircle the support vector points. Do you get the same answer as when you use sklearn's SVM?\textbf{[2 marks]}
+	\item This time without using soft-margin SVM, we can still solve the problem using kernels. Use sklearn's functions and RBF kernel with varying gamma and the polynomial kernel with varying degree  on this dataset. As before show the support vectors, margin and separating hyperplane.  What are your observations on the fit with varying gamma and degree?\textbf{[2 marks]}
+	
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+
+
+	
+
+
+
+
+
+\end{document}

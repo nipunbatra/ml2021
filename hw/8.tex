@@ -1,0 +1,90 @@
+\documentclass[colorlinks,linkcolor=true]{article}
+\usepackage{hyperref,verbatim}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{amsmath}
+\usepackage{tgpagella} % text only
+\usepackage{mathpazo} 
+\usepackage[margin=0.6in]{geometry}
+\addtolength{\topmargin}{0in}
+
+
+\newcommand{\deadline}{Midnight April 20}
+\newcommand{\extdeadline}{Midnight April 21}
+\newcommand{\total}{15}
+
+%opening
+\title{Machine Learning\\Homework 8 : Neural Networks and Logistic Regression\\(due \deadline)}
+\author{}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\noindent\fbox{
+		\parbox{\textwidth}{
+			Instructions\\
+			\begin{enumerate}
+
+				\item The deadline for full score is \deadline. You can get 50\% credit for late submission (\extdeadline).
+				\item Total marks = \total
+				\item You have to type the assignment using a word processing engine, create a pdf and upload on the form. Please note that only pdf files will be accepted.
+				\item All code/Jupyter notebooks must be put up as secret gists and linked in the created pdf submission. Again, only secret gists. Not public ones.
+				\item Any instances of cheating/plagiarism will not be tolerated at all. 
+				\item Cite all the pertinent references in IEEE format.
+				\item The least count of grading would be 0.5 marks. 
+				
+			\end{enumerate}
+		}
+	}
+
+
+\begin{enumerate}
+
+
+
+\item \begin{enumerate}
+	
+\item Logistic Regression
+\begin{enumerate}
+	\item Implement a function for binary logistic regression using gradient descent \textbf{[2 marks]}
+	\item Show the usage of your implementation on the IRIS dataset. We will only be making use of sepal-length and petal-width as the two features. We have only two classes - Setosa and Not-Setosa.  \textbf{[1 marks]}
+	\item Plot the decision boundary \textbf{[1 marks]}
+	\item Compare your implementation against sklearn's Logistic Regression \textbf{[1 marks]}
+
+\end{enumerate}
+
+\item Neural Networks
+\begin{enumerate}
+	\item Implement a neural network class that can be instantiated with: 
+	\begin{enumerate}
+		\item an input data matrix X containing samples as rows and features as columns
+		\item a list containing number of hidden units in each hidden layer
+		\item a list containing activation function to be used in eacyh layer: sigmoid, softmax, ReLU, or identity (or linear)
+		\item a cost function
+	\end{enumerate} 
+	As an example: let us say we have an input data matrix of shape 100X3, we use 2 layers and the number of hidden units is: [4, 2, 1] where the last number (1) indicates number of units in the output layer, the activations we use for the three layers are: ['ReLU','ReLU','Linear'] 
+	 \textbf{[1 marks]}
+	 \item For this class define a method forward propagation \textbf{[2 marks]}
+	 \item For this class define a method backward propagation which provides the derivative of weights wrt cost function \textbf{[2 marks]}
+	\item  Implement a gradient descent based method to update the weights \textbf{[1 mark]}
+	
+\end{enumerate}
+
+\item Show the usage of your defined neural network on:
+\begin{enumerate}
+	\item MNIST dataset where you shuffle the data once, and then use first 50\% of the data for training, next 20\% for validation and last 30\% of the data for testing. You must return the confusion matrix and overall test accuracy. You may choose the number of layers and activations as per your choice. Given that for this loss function we did not do the backpropagation derivation in the lecture, you are free to use Autograd to compute the derivatives.  \textbf{[2 marks]}
+	\item Housing price dataset as you've been using thus far in earlier assignments where you shuffle the data once, and then use first 50\% of the data for training, next 20\% for validation and last 30\% of the data for testing. You must return the RMSE and MAE. You may choose the number of layers and activations as per your choice \textbf{[2 marks]}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+
+
+	
+
+
+
+
+
+\end{document}

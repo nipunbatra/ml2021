@@ -1,0 +1,100 @@
+\documentclass[colorlinks]{article}
+\usepackage{graphicx}
+
+\usepackage{hyperref,verbatim}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{tgpagella} % text only
+\usepackage{mathpazo} 
+\usepackage[margin=0.6in]{geometry}
+\addtolength{\topmargin}{0in}
+
+
+\newcommand{\deadline}{Noon Jan 27}
+\newcommand{\extdeadline}{Noon Jan 29}
+\newcommand{\total}{20}
+
+%opening
+\title{Machine Learning\\Homework 2 : Ensemble Methods\\(due \deadline)}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\noindent\fbox{
+	\parbox{\textwidth}{
+		Instructions\\
+		\begin{enumerate}
+			\item In case you are unfamiliar with the Python data ecosystem (NumPy, Pandas), you are recommended to study the first four chapters of the \href{https://jakevdp.github.io/PythonDataScienceHandbook/}{Python data science handbook}. A doubt clearing session would be organised in case you have any difficulties in the data science ecosystem.
+			\item The deadline for full score is \deadline. You can get 50\% credit for late submission (\extdeadline).
+			\item Total marks = \total
+			\item You have to type the assignment using a word processing engine, create a pdf and upload on the form. Please note that only pdf files will be accepted.
+			\item All code/Jupyter notebooks must be put up as \href{https://gist.github.com/}{\textbf{secret gists}} and linked in the created pdf submission. Again, only secret gists. Not public ones.
+			\item Any instances of cheating/plagiarism will not be tolerated at all. 
+			\item Cite all the pertinent references in IEEE format.
+			\item The least count of grading would be 0.5 marks. 
+
+		\end{enumerate}
+	}
+}
+
+
+
+
+\begin{enumerate}
+
+
+
+	 \item \begin{enumerate}
+	 	\item Extend the decision tree you created in first assignment to now implement random forests.  \textbf{[2 marks]}
+	 	\item Now create a parallelised version of the above where different trees can be built in parallel. You can use \href{https://sebastianraschka.com/Articles/2014_multiprocessing.html}{this article} as a reference. \textbf{[1 mark]}
+	 	\item Using simulations compare the performance of serial and parallel versions of your implementation, i.e. as you increase parallelisation do you get performance benefits? \textbf{[1 mark]}
+	 	\item Now use your random forest implementation on the IRIS dataset. Like before, the first 70\% of the data should be used for trainining and 30\% for test purposes. Compare the accuracy v/s decision tree for the following parameters: i) \# of estimators = 20, ii) \# feature choices to use = $\sqrt(n)$ where $n$ indicates the total number of features available.  \textbf{[1 mark]}
+	 	\item Now use 5-fold cross-validation on the IRIS dataset. Using nested cross-validation find the optimum number of estimators in the set of [1, 2, 5, 10, 50, 100] estimators.  \textbf{[1 mark]}
+	 \end{enumerate}
+ 
+	\item Submit your score on Kaggle (IITGN internal competition) for the blue book for \href{https://www.kaggle.com/c/iitgnml/}{bulldozers competition} using a) decision tree or b) random forests. You are free to use scikit-learn for this competition. For this competition, your Kaggle score or rank will not be counted towards your score for this question. The purpose of this question is to make you comfortable with Kaggle.
+\textbf{[5 marks]}
+
+\item \begin{enumerate}
+	\item Re-encode the IRIS dataset class as 'virginica' and 'not-virginica'. Now apply ADABoost (on depth-1 decision trees as weak learner) while considering only 'sepal length' and 'petal width' as the features. Train on 100\% of the data and create a Matplotlib animation for the first 4 iterations of ADAboost. The title of the plot should show the iteration number and the accuracy on the train set. The plot should color the 'virginica' and 'not-virginica' points differently and their marker size should correspond to their weights as per the ADABoost algortihm. \textbf{[2 marks]}
+	\item Now, add some 'noise' to the above dataset, i.e. add some 'virginica' points to the vicinity of the 'not-virginica' points and vice-versa. A human should be able to recorgnise these as outliers. Run the animation for 8 iterations on this dataset and comment on the behaviour of ADABoost. \textbf{[2 marks]}
+\end{enumerate}
+
+
+\item \begin{enumerate}
+	\item Create a dataset of 50 points where y = mx + c +  random noise. Ensure that the noise is significant compared to the trend in the data. Plot this data using Matplotlib. \textbf{[1 mark]}
+	\item Using this \href{https://www.scipy-lectures.org/intro/numpy/auto_examples/plot_polyfit.html}{article} as a reference, plot a 5 degree fit for the data \textbf{[1 mark]}
+	\item Illustrate the concept of bagging on this dataset. For $n$=100 rounds of bagging, fit 5 degree curve and comment on the average (bagged) regressor. Is less prone to variance? If this setting is not able to show the efficacy of bagging, please use a higher degree fit (say 20) and repeat the experiment.\textbf{[1 mark]}
+\end{enumerate}
+
+
+\item \begin{enumerate}
+	\item Write a program (without using any builtin function) to randomly choose between a list of N numbers [1, ..., N]. You are free to use any algorithm for the same. The goal of this exercise is to enable you to understand how computers would randomly choose from a set of choices. You would used such a routine to implement bagging.\textbf{[1 mark]} 
+	\item Invoke the above program 1000 times where N = 100. Plot the distribution of the generated random numbers. Do you get a roughly uniform distribution?\textbf{[1 mark]} 
+\end{enumerate}
+
+
+
+	
+	
+	
+
+\end{enumerate}
+
+
+Some useful references for the homework:
+
+\begin{enumerate}
+	\item \href{https://scikit-learn.org/stable/modules/tree.html}{Scikit-learn page on decision trees}
+		\item \href{https://scikit-learn.org/stable/modules/ensemble.html}{Scikit-learn page on ensemble methods}
+\end{enumerate}
+
+
+
+
+
+
+
+\end{document}
