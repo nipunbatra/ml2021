@@ -1,17 +1,22 @@
 ---
 layout: about
 permalink: /
-title: Machine Learning Spring 2020
+title: Machine Learning Spring 2021
 description: ES 654
 ---
 
 
-*** Under repair ***
 
 *   Instructor: Nipun Batra (nipun.batra@iitgn.ac.in)
-*   Teaching Assistants: Indradeep (indra.mastan@iitgn.ac.in), Sudhakar (sudhakar.kumawat@iitgn.ac.in ), Supratim (supratim.shit@iitgn.ac.in), Shubham (shubam.singh@iitgn.ac.in)
-*   Course Timings: Tue and Friday (3:30 to 5 PM in 1/101)  
-    Office hours: Monday (12 Noon to 1): Please try to stick to this time unless it is an emergency
+*   Teaching Assistants: Pankaj Pandey (pankaj.p@iitgn.ac.in), Jaideep Bankoti (bankoti_jaideep@iitgn.ac.in), Rishiraj Adhikary (rishiraj.a@iitgn.ac.in), 
+*   Course Timings: Thursday and Friday (5 PM to 6:30 PM)  
+*   MS Teams code: dr1od52 
+
+
+* * * 
+[Course FAQ, grading policy](https://docs.google.com/document/d/1b5tH20Dlv0JePa0QclL5TpgcPWX3Eu-QEHak1rSUecI/edit): You have comment access, please comment for more details
+[List of project ideas](https://docs.google.com/spreadsheets/d/1SJnrhMxo9rzAtPECMtfwnBzvOWTPEvHodeZWXBH-oPU/edit#gid=0)
+
 
 * * *
 
@@ -40,29 +45,6 @@ Reference textbooks:
 7.  Goodfellow I, Bengio Y, Courville A, Bengio Y. Deep learning. Cambridge: MIT press; 2016 Nov 18.[\[Freely available online\]](https://www.deeplearningbook.org/)
 
 * * *
-
-**Grading policy:**
-
-*   Project (in groups of 4 or less) [(Some ideas from instructors)](https://docs.google.com/document/d/1sM-BdF7tCofvXwsvB22Tv5ve8JQAEwA5kh705uzsNns), and [some ideas from a Stanford ML course](http://cs229.stanford.edu/proj2017/) : 40%
-
-*   Project proposal report (due Jan 20) : 5%
-*   Phase-I presentation (week of Feb 10) : 5%
-*   Phase-II presentation (week of March 15) : 5%
-*   Final project 3 minute madness (week of April 20) \[See 3MT for inspiration\] : 5%
-*   Final project demo and poster (week of April 20) : 15%
-*   Final report (due April 22) : 5%
-
-*   3 Surprise quizzes worth 3% each, best 2/3 are recorded for grade : 6%
-
-*   Quiz 1 will be held before or on 15th Jan
-*   Quiz 2 will be held before or
-
-*   End semester : 10%
-*   [Paper presentation](https://docs.google.com/spreadsheets/d/19X7uj0evg1aCV_iVnrrZjquG6jr5Qdpg06TqvNiPvTE/edit#gid=0) \[[Slides template](https://docs.google.com/presentation/d/1IOb5osggH6rGzJmS3f7drlGJAk3WzhmCpnDHecOzoPI/edit#slide=id.g4d46f3c2cc_0_55)\]\[3 people argue for each paper. One person summarises the paper, second person acts as an advocate representing the paper; and the third person is the devil's advocate convincing the jury that paper has flaws\] : 4%
-*   Kaggle competition : 4% \[done individually, due sometime early April\]
-*   Machine Learning demo (like [this](http://stanford.edu/class/ee103/visualizations/kmeans/kmeans.html) or [this](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/) or [this](https://www.saedsayad.com/flash/SLR.html) or [this](https://cs.stanford.edu/people/karpathy/svmjs/demo/demoforest.html)) \[Same team as project\]\[due 30th March \] : 4%
-*   8 Programming Homework Assignments (50% credit for late submission (upto 1 day for 1st assignment and 2 for others)) \[**NB - A subset of these will have an associated viva**\] : 32%
-*   Bonus marks - 10 marks if you get into Master level on Kaggle or 5 marks if you get into Expert level on Kaggle
 
 
 * * *
