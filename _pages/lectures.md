@@ -8,4 +8,4 @@ description: "Education is what remains after one has forgotten what one has lea
 
 |  Lecture # | Date | Topic | Reading |
 | --- | --- | --- | --- | --- |
-|1| 6 Jan|Introduction [[Slides](../lectures/1-introduction.pdf)][[Video]()]|
+|1| 6 Jan|Introduction [[Slides](../lectures/1-introduction.pdf)][[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EUx2sCzt_q5PtOrs0nAt2ZwBDpWFlMtBDRyLEntX1fnsnA?e=zztK7J)]|

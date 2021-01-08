@@ -15,6 +15,7 @@ description: ES 654
 
 * * * 
 [Course FAQ, grading policy](https://docs.google.com/document/d/1b5tH20Dlv0JePa0QclL5TpgcPWX3Eu-QEHak1rSUecI/edit): You have comment access, please comment for more details
+
 [List of project ideas](https://docs.google.com/spreadsheets/d/1SJnrhMxo9rzAtPECMtfwnBzvOWTPEvHodeZWXBH-oPU/edit#gid=0)
 
 
