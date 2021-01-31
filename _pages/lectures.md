@@ -15,3 +15,4 @@ description: "Education is what remains after one has forgotten what one has lea
 |5| 22 Jan| Ensemble Learning [[Slides](../lectures/ensemble.pdf)][[Video](https://iitgnacin-my.sharepoint.com/:v:/r/personal/nipun_batra_iitgn_ac_in/Documents/Teaching/ML2021/Recordings/1-22.mp4?csf=1&web=1&e=IxPpYa)]|
 |6| 24 Jan| Maths ML [[Slides](../lectures/ml-maths-1.pdf)] Linear Regression [[Slides](../lectures/linear-regression.pdf)][[Video](https://iitgnacin-my.sharepoint.com/:v:/r/personal/nipun_batra_iitgn_ac_in/Documents/Teaching/ML2021/Recordings/1-24.mp4?csf=1&web=1&e=NzrMoV)]|
 |7| 29 Jan| Geometric Interpretation of Least Squares [[Video](https://iitgnacin-my.sharepoint.com/:v:/r/personal/nipun_batra_iitgn_ac_in/Documents/Teaching/ML2021/Recordings/1-29.mp4?csf=1&web=1&e=xfZvpo)]|
+|7| 31 Jan| Linear Regression II [[Video](https://iitgnacin-my.sharepoint.com/:v:/r/personal/nipun_batra_iitgn_ac_in/Documents/Teaching/ML2021/Recordings/1-31.mp4?csf=1&web=1&e=RslYIT)]|
