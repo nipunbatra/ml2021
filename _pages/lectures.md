@@ -16,6 +16,6 @@ description: "Education is what remains after one has forgotten what one has lea
 |6| 24 Jan| Maths ML [[Slides](../lectures/ml-maths-1.pdf)] Linear Regression [[Slides](../lectures/linear-regression.pdf)][[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/ETTKiHJo-glAvIDEjLoeIXIBiNH3KAQpTS8OfkfKWpkliQ?e=wwpFee)]|
 |7| 29 Jan| Geometric Interpretation of Least Squares [[Slides](../lectures/geometric-regression.pdf)] Contour plot [[Slides](../lectures/contour.pdf)][[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EYdl3pO8NihIlg4cDpEbuxkBekx-SxibWaMh7rCkq7NI8Q?e=H9FanK)]|
 |8| 31 Jan| Linear Regression II [[Slides](../lectures/linear-regression-2.pdf)] Convexity [[Slides](../lectures/convexity.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/ES3jFXCvNc1Cry-j0vKkp7YBXNpL6BgeIxI6UtApq6-i8Q?e=xfZU5N)]|
-|9| 5 Feb | Contour Plot [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EbYvSUDFUQtDss3o9ymHah8BBojAml3ZX8LcqEd6D9tHrA?e=UXXeuw)]|
-|10| 6 Feb | Gradient Descent [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/ERfGUKhtjZ5NqLy11kOGFLAB_1nxPQy-NH-naOA9yrtfZA?e=aD23hn)]|
-|11| 12 Feb| Constrained Optimisation |
+|9| 5 Feb | Gradient Descent [[Slides](../lectures/Gradient-descent.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EbYvSUDFUQtDss3o9ymHah8BBojAml3ZX8LcqEd6D9tHrA?e=UXXeuw)]|
+|10| 6 Feb | Linear Regression (Time Complexity) [[Slides](../lectures/normal-timecomplexity.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/ERfGUKhtjZ5NqLy11kOGFLAB_1nxPQy-NH-naOA9yrtfZA?e=aD23hn)]|
+|11| 12 Feb| Constrained Optimisation [[Slides](../lectures/ml-maths-3.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/ERvzFFkA2s1Cnfm8hLdoLWkBT9nAEaDRlM00iIdzb_e0rQ?e=jbqrnq)]|
