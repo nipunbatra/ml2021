@@ -19,3 +19,4 @@ description: "Education is what remains after one has forgotten what one has lea
 |9| 5 Feb | Gradient Descent [[Slides](../lectures/Gradient-descent.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EbYvSUDFUQtDss3o9ymHah8BBojAml3ZX8LcqEd6D9tHrA?e=UXXeuw)]|
 |10| 6 Feb | Linear Regression (Time Complexity) [[Slides](../lectures/normal-timecomplexity.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/ERfGUKhtjZ5NqLy11kOGFLAB_1nxPQy-NH-naOA9yrtfZA?e=aD23hn)]|
 |11| 12 Feb| Constrained Optimisation [[Slides](../lectures/ml-maths-3.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/ERvzFFkA2s1Cnfm8hLdoLWkBT9nAEaDRlM00iIdzb_e0rQ?e=jbqrnq)]|
+|12| 13 Feb| Ridge Regression [[Slides](../lectures/ridge-regression.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EferPGBdiK5Oqriaca4yLcMBMqfutZZp5Y-avIBsAlSNoA?e=GkDAlE)]|
