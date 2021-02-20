@@ -20,3 +20,5 @@ description: "Education is what remains after one has forgotten what one has lea
 |10| 6 Feb | Linear Regression (Time Complexity) [[Slides](../lectures/normal-timecomplexity.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/ERfGUKhtjZ5NqLy11kOGFLAB_1nxPQy-NH-naOA9yrtfZA?e=aD23hn)]|
 |11| 12 Feb| Constrained Optimisation [[Slides](../lectures/ml-maths-3.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/ERvzFFkA2s1Cnfm8hLdoLWkBT9nAEaDRlM00iIdzb_e0rQ?e=jbqrnq)]|
 |12| 13 Feb| Ridge Regression [[Slides](../lectures/ridge-regression.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EferPGBdiK5Oqriaca4yLcMBMqfutZZp5Y-avIBsAlSNoA?e=GkDAlE)]|
+|13| 19 Feb | Lasso Regression I [[Slides](../lectures/lasso-regression.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/Ebnm8dB1RCpFsHeqBINbFXcBsJVW1A_momxDjYK2n0ABGA?e=cXSYON)] |
+|14| 20 Feb | Lasso Regression II [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/Ea-4Xaui_ypAjXcLW4Lp0GABCDtdbGKUiOkIF7xFLaADPQ?e=Jdntql)] |
