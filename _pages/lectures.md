@@ -22,3 +22,5 @@ description: "Education is what remains after one has forgotten what one has lea
 |12| 13 Feb| Ridge Regression [[Slides](../lectures/ridge-regression.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EferPGBdiK5Oqriaca4yLcMBMqfutZZp5Y-avIBsAlSNoA?e=GkDAlE)]|
 |13| 19 Feb | Lasso Regression I [[Slides](../lectures/lasso-regression.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/Ebnm8dB1RCpFsHeqBINbFXcBsJVW1A_momxDjYK2n0ABGA?e=cXSYON)] |
 |14| 20 Feb | Lasso Regression II [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/Ea-4Xaui_ypAjXcLW4Lp0GABCDtdbGKUiOkIF7xFLaADPQ?e=Jdntql)] |
+|15| 26 Feb | Bayesian Learning [[Slides](../lectures/bayesian1.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EcdwPxtMJdBPqmj0HJw4U_IBTd40CaHUB9bAomYkE8P_lQ?e=OJRjce)] |
+|16| 27 Feb | Bayesian Linear Regression [[Slides](../lectures/bayesian-regression1.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EXmaxtjeVr9Lj_2g7YHOyWABdtIiaS5r40Li_FsOD6NnNQ?e=FV9bgJ)] |
