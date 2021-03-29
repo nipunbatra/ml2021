@@ -26,3 +26,4 @@ description: "Education is what remains after one has forgotten what one has lea
 |16| 27 Feb | Bayesian Linear Regression [[Slides](../lectures/bayesian-regression1.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EXmaxtjeVr9Lj_2g7YHOyWABdtIiaS5r40Li_FsOD6NnNQ?e=FV9bgJ)] |
 |17| 19 Mar | Logistic Regression I [[Slides](../lectures/logistic-regression.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EX3J6T1UmyRFs-T7kBxXMeUBxUlXi61kZD0Rj7y7f_qB6w?e=dPnzwV)] |
 |18| 20 Mar | Logistic Regression II [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EW91sbieKYBBi3EWstK3DWMBFh7HU7VFZpAIh3iSwgilxg?e=DPgIkA)] |
+|19| 27 Mar | Bayesian ML (guest lecture by Zeel Patel) [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/Eb0qu0klbAxJvOmaIpw9ziMBvz0i9ds_EvdAwcSU8_GR6g?e=JNgx8w)] |
