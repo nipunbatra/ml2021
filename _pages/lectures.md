@@ -32,5 +32,4 @@ description: "Education is what remains after one has forgotten what one has lea
 |22| 9 Apr | NN: Computation Graph [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EY4w920r2GpDrwOCmkJcQaQBTTeVFCXxcCuZGvONkBaePQ?e=ynuLrV)] |
 |23| 10 Apr | NN: Backpropagation [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EbNqTOOp7tNEnGlBAYibgJUB-5Aju6Kg9IKNCXr4sI84_Q?e=Q2c4ir)] |
 |24| 16 Apr | CNN [[Slides](../lectures/24-CNN.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/ESUaJ1mqCL1CirvaHkQLAIkBgTtaAMuE8X2pSKg6OJ-8tg?e=P0TIiB)] |
-|25| 17 Apr | Naive Bayes [[Slides](../lectures/bayesian-nets.pdf
-)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EWKZmzwSH7NDke79lVgwgXMBoaXsOCC6C-6tUvkD8EgjqA?e=dLyw85)] |
+|25| 17 Apr | Naive Bayes [[Slides](../lectures/bayesian-nets.pdf)] [[Video](https://iitgnacin-my.sharepoint.com/:v:/g/personal/nipun_batra_iitgn_ac_in/EWKZmzwSH7NDke79lVgwgXMBoaXsOCC6C-6tUvkD8EgjqA?e=dLyw85)] |
